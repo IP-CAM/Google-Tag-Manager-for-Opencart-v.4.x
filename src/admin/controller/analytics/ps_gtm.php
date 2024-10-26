@@ -40,8 +40,45 @@ class PsGtm extends \Opencart\System\Engine\Controller
         $data['fix_event_handler'] = $this->url->link('extension/ps_gtm/analytics/ps_gtm' . $separator . 'fixEventHandler', 'user_token=' . $this->session->data['user_token']);
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=analytics');
 
-		$data['analytics_ps_gtm_status'] = $this->config->get('analytics_ps_gtm_status');
-		$data['analytics_ps_gtm_gtm_id'] = $this->config->get('analytics_ps_gtm_gtm_id');
+        $data['analytics_ps_gtm_status'] = (bool) $this->config->get('analytics_ps_gtm_status');
+        $data['analytics_ps_gtm_gtm_id'] = $this->config->get('analytics_ps_gtm_gtm_id');
+        $data['analytics_ps_gtm_gcm_status'] = (bool) $this->config->get('analytics_ps_gtm_gcm_status');
+        $data['analytics_ps_gtm_ad_storage'] = (bool) $this->config->get('analytics_ps_gtm_ad_storage');
+        $data['analytics_ps_gtm_ad_user_data'] = (bool) $this->config->get('analytics_ps_gtm_ad_user_data');
+        $data['analytics_ps_gtm_ad_personalization'] = (bool) $this->config->get('analytics_ps_gtm_ad_personalization');
+        $data['analytics_ps_gtm_analytics_storage'] = (bool) $this->config->get('analytics_ps_gtm_analytics_storage');
+        $data['analytics_ps_gtm_functionality_storage'] = (bool) $this->config->get('analytics_ps_gtm_functionality_storage');
+        $data['analytics_ps_gtm_personalization_storage'] = (bool) $this->config->get('analytics_ps_gtm_personalization_storage');
+        $data['analytics_ps_gtm_security_storage'] = (bool) $this->config->get('analytics_ps_gtm_security_storage');
+        $data['analytics_ps_gtm_wait_for_update'] = $this->config->get('analytics_ps_gtm_wait_for_update');
+        $data['analytics_ps_gtm_ads_data_redaction'] = (bool) $this->config->get('analytics_ps_gtm_ads_data_redaction');
+        $data['analytics_ps_gtm_url_passthrough'] = (bool) $this->config->get('analytics_ps_gtm_url_passthrough');
+
+        $data['analytics_ps_gtm_gcm_profiles'] = 0;
+
+        if (
+            !$data['analytics_ps_gtm_ad_storage'] &&
+            !$data['analytics_ps_gtm_ad_user_data'] &&
+            !$data['analytics_ps_gtm_ad_personalization'] &&
+            !$data['analytics_ps_gtm_analytics_storage'] &&
+            $data['analytics_ps_gtm_functionality_storage'] &&
+            $data['analytics_ps_gtm_personalization_storage'] &&
+            $data['analytics_ps_gtm_security_storage']
+        ) {
+            $data['analytics_ps_gtm_gcm_profiles'] = 1;
+        }
+
+        if (
+            $data['analytics_ps_gtm_ad_storage'] &&
+            $data['analytics_ps_gtm_ad_user_data'] &&
+            !$data['analytics_ps_gtm_ad_personalization'] &&
+            $data['analytics_ps_gtm_analytics_storage'] &&
+            $data['analytics_ps_gtm_functionality_storage'] &&
+            $data['analytics_ps_gtm_personalization_storage'] &&
+            $data['analytics_ps_gtm_security_storage']
+        ) {
+            $data['analytics_ps_gtm_gcm_profiles'] = 2;
+        }
 
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
@@ -63,7 +100,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
         if (!$json) {
             if (!isset($this->request->post['analytics_ps_gtm_gtm_id'])) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id');
-            } elseif (preg_match('/^GTM-[A-Z0-9]{8}$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
+            } elseif (preg_match('/^GTM-[A-Z0-9]+$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id_invalid');
             }
         }
