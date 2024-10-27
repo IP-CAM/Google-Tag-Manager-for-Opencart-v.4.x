@@ -10,10 +10,8 @@
     "opencart",
     "oc",
     "playfulsparkle",
-    "seo",
-    "structured data",
-    "opengraph",
-    "twitter card"
+    "gtm",
+    "google tag manager"
   ],
   "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
   "license": "GPL",
