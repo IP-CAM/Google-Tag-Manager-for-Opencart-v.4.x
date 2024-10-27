@@ -8,6 +8,16 @@ namespace Opencart\Admin\Controller\Extension\PsGtm\Analytics;
 class PsGtm extends \Opencart\System\Engine\Controller
 {
     /**
+     * @var string The support email address.
+     */
+    const EXTENSION_EMAIL = 'support@playfulsparkle.com';
+
+    /**
+     * @var string The documentation URL for the extension.
+     */
+    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_gtm';
+
+    /**
      * @return void
      */
     public function index(): void
@@ -79,6 +89,8 @@ class PsGtm extends \Opencart\System\Engine\Controller
         ) {
             $data['analytics_ps_gtm_gcm_profiles'] = 2;
         }
+
+        $data['text_contact'] = sprintf($this->language->get('text_contact'), self::EXTENSION_EMAIL, self::EXTENSION_EMAIL, self::EXTENSION_DOC);
 
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
