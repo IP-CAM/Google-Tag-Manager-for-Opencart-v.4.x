@@ -1,4 +1,4 @@
-# Playful Sparkle - Google Tag Manager Extension for OpenCart 4
+# Playful Sparkle - Google Tag Manager for OpenCart 4
 
 The **Playful Sparkle - Google Tag Manager** extension streamlines the integration of Google Tag Manager (GTM) with your OpenCart 4 store. By simply entering your GTM ID and enabling the module, you unlock a powerful tool for managing all your website's tags without directly altering your site’s code.
 
