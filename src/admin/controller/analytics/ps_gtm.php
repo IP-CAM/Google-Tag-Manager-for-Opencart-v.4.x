@@ -15,7 +15,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
     /**
      * @var string The documentation URL for the extension.
      */
-    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_gtm';
+    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_gtm.git';
 
     /**
      * @return void
