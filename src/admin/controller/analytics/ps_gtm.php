@@ -40,13 +40,13 @@ class PsGtm extends \Opencart\System\Engine\Controller
 
         $data['breadcrumbs'][] = [
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('extension/analytics/ps_gtm', 'user_token=' . $this->session->data['user_token'], true),
+            'href' => $this->url->link('extension/analytics/ps_gtm', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true),
         ];
 
 
         $separator = version_compare(VERSION, '4.0.2.0', '>=') ? '.' : '|';
 
-        $data['action'] = $this->url->link('extension/ps_gtm/analytics/ps_gtm' . $separator . 'save', 'user_token=' . $this->session->data['user_token']);
+        $data['action'] = $this->url->link('extension/ps_gtm/analytics/ps_gtm' . $separator . 'save', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id']);
         $data['fix_event_handler'] = $this->url->link('extension/ps_gtm/analytics/ps_gtm' . $separator . 'fixEventHandler', 'user_token=' . $this->session->data['user_token']);
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=analytics');
 
