@@ -47,7 +47,7 @@ $_['entry_custom']                  = 'Vlastný';
 $_['entry_gcm_profiles']            = 'GCM Profily';
 
 // Button
-$_['button_fix_event_handler']      = 'Opraviť obslužný program udalostí';
+$_['button_fix_event_handler']      = 'Opraviť spracovateľ udalostí';
 
 // Help
 $_['help_ad_storage']               = 'Ovláda, či je povolené ukladanie údajov na reklamy, ako je sledovanie kliknutí na reklamy alebo konverzií.';
