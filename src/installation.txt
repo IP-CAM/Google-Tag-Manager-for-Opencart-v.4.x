@@ -46,7 +46,7 @@ Installation Guide
 4. Configure the Extension:
    - Go to the Extensions page and ensure Analytics is selected.
    - Click the "Edit" button next to the installed Playful Sparkle - Google Tag Manager extension.
-   - Enter your Google Tag Manager ID (GTM-XXXXXXX) in the provided field.
+   - Enter your Measurement ID (GTM-XXXXXXX) in the provided field.
    - Set the status to "Enabled" to activate the module.
    - Save your configuration.
 
