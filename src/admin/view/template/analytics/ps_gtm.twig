@@ -34,8 +34,8 @@
 								<label for="input-status" class="col-sm-2 col-form-label">{{ entry_status }}</label>
 								<div class="col-sm-10">
 									<div class="form-check form-switch form-switch-lg">
-										<input type="hidden" name="analytics_ps_gtm_status" value="0" />
-										<input type="checkbox" name="analytics_ps_gtm_status" value="1" class="form-check-input" {% if analytics_ps_gtm_status %} checked{% endif %} id="input-status" />
+										<input type="hidden" name="analytics_ps_gtm_status" value="0">
+										<input type="checkbox" name="analytics_ps_gtm_status" value="1" class="form-check-input" {% if analytics_ps_gtm_status %} checked{% endif %} id="input-status">
 									</div>
 								</div>
 							</div>
@@ -43,7 +43,7 @@
 							<div class="row mb-3 required">
 								<label for="input-gtm-id" class="col-sm-2 col-form-label">{{ entry_gtm_id }}</label>
 								<div class="col-sm-10">
-									<input type="text" name="analytics_ps_gtm_gtm_id" value="{{ analytics_ps_gtm_gtm_id | default('') }}" placeholder="{{ entry_gtm_id }}" id="input-gtm-id" class="form-control" />
+									<input type="text" name="analytics_ps_gtm_gtm_id" value="{{ analytics_ps_gtm_gtm_id | default('') }}" placeholder="{{ entry_gtm_id }}" id="input-gtm-id" class="form-control">
 									<div id="error-input-gtm-id" class="invalid-feedback"></div>
 									<div class="form-text">{{ help_gtm_id_locate }}</div>
 								</div>
@@ -56,8 +56,8 @@
 								<label for="input-gcm-status" class="col-sm-2 col-form-label">{{ entry_gcm_status }}</label>
 								<div class="col-sm-10">
 									<div class="form-check form-switch form-switch-lg">
-										<input type="hidden" name="analytics_ps_gtm_gcm_status" value="0" />
-										<input type="checkbox" name="analytics_ps_gtm_gcm_status" value="1" id="input-gcm-status" class="form-check-input" {% if analytics_ps_gtm_gcm_status %} checked{% endif %} />
+										<input type="hidden" name="analytics_ps_gtm_gcm_status" value="0">
+										<input type="checkbox" name="analytics_ps_gtm_gcm_status" value="1" id="input-gcm-status" class="form-check-input" {% if analytics_ps_gtm_gcm_status %} checked{% endif %}>
 									</div>
 									<div class="form-text">{{ help_gcm_status }}</div>
 								</div>
@@ -81,8 +81,8 @@
 									<label for="input-ad-storage" class="col-sm-2 col-form-label">{{ entry_ad_storage }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_ad_storage" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_ad_storage" value="1" id="input-ad-storage" class="form-check-input" {% if analytics_ps_gtm_ad_storage %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_ad_storage" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_ad_storage" value="1" id="input-ad-storage" class="form-check-input" {% if analytics_ps_gtm_ad_storage %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_ad_storage }}</div>
 									</div>
@@ -92,8 +92,8 @@
 									<label for="input-ad-user-data" class="col-sm-2 col-form-label">{{ entry_ad_user_data }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_ad_user_data" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_ad_user_data" value="1" id="input-ad-user-data" class="form-check-input" {% if analytics_ps_gtm_ad_user_data %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_ad_user_data" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_ad_user_data" value="1" id="input-ad-user-data" class="form-check-input" {% if analytics_ps_gtm_ad_user_data %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_ad_user_data }}</div>
 									</div>
@@ -103,8 +103,8 @@
 									<label for="input-ad-personalization" class="col-sm-2 col-form-label">{{ entry_ad_personalization }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_ad_personalization" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_ad_personalization" value="1" id="input-ad-personalization" class="form-check-input" {% if analytics_ps_gtm_ad_personalization %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_ad_personalization" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_ad_personalization" value="1" id="input-ad-personalization" class="form-check-input" {% if analytics_ps_gtm_ad_personalization %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_ad_personalization }}</div>
 									</div>
@@ -119,8 +119,8 @@
 									<label for="input-analytics-storage" class="col-sm-2 col-form-label">{{ entry_analytics_storage }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_analytics_storage" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_analytics_storage" value="1" id="input-analytics-storage" class="form-check-input" {% if analytics_ps_gtm_analytics_storage %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_analytics_storage" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_analytics_storage" value="1" id="input-analytics-storage" class="form-check-input" {% if analytics_ps_gtm_analytics_storage %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_analytics_storage }}</div>
 									</div>
@@ -130,8 +130,8 @@
 									<label for="input-functionality-storage" class="col-sm-2 col-form-label">{{ entry_functionality_storage }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_functionality_storage" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_functionality_storage" value="1" id="input-functionality-storage" class="form-check-input" {% if analytics_ps_gtm_functionality_storage %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_functionality_storage" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_functionality_storage" value="1" id="input-functionality-storage" class="form-check-input" {% if analytics_ps_gtm_functionality_storage %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_functionality_storage }}</div>
 									</div>
@@ -141,8 +141,8 @@
 									<label for="input-personalization-storage" class="col-sm-2 col-form-label">{{ entry_personalization_storage }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_personalization_storage" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_personalization_storage" value="1" id="input-personalization-storage" class="form-check-input" {% if analytics_ps_gtm_personalization_storage %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_personalization_storage" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_personalization_storage" value="1" id="input-personalization-storage" class="form-check-input" {% if analytics_ps_gtm_personalization_storage %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_personalization_storage }}</div>
 									</div>
@@ -157,8 +157,8 @@
 									<label for="input-security-storage" class="col-sm-2 col-form-label">{{ entry_security_storage }}</label>
 									<div class="col-sm-10">
 										<div class="form-check form-switch form-switch-lg">
-											<input type="hidden" name="analytics_ps_gtm_security_storage" value="0" />
-											<input type="checkbox" name="analytics_ps_gtm_security_storage" value="1" id="input-security-storage" class="form-check-input" {% if analytics_ps_gtm_security_storage %} checked{% endif %} />
+											<input type="hidden" name="analytics_ps_gtm_security_storage" value="0">
+											<input type="checkbox" name="analytics_ps_gtm_security_storage" value="1" id="input-security-storage" class="form-check-input" {% if analytics_ps_gtm_security_storage %} checked{% endif %}>
 										</div>
 										<div class="form-text">{{ help_security_storage }}</div>
 									</div>
@@ -172,7 +172,7 @@
 								<div class="row mb-3">
 									<label for="input-wait-for-update" class="col-sm-2 col-form-label">{{ entry_wait_for_update }}</label>
 									<div class="col-sm-10">
-										<input type="number" min="0" max="10000" name="analytics_ps_gtm_wait_for_update" value="{{ analytics_ps_gtm_wait_for_update | default('0') }}" placeholder="{{ entry_wait_for_update }}" id="input-wait-for-update" class="form-control" />
+										<input type="number" min="0" max="10000" name="analytics_ps_gtm_wait_for_update" value="{{ analytics_ps_gtm_wait_for_update | default('0') }}" placeholder="{{ entry_wait_for_update }}" id="input-wait-for-update" class="form-control">
 										<div id="error-input-wait-for-update" class="invalid-feedback"></div>
 										<div class="form-text">{{ help_wait_for_update }}</div>
 									</div>
@@ -182,8 +182,8 @@
 										<label for="input-ads-data-redaction" class="col-sm-2 col-form-label">{{ entry_ads_data_redaction }}</label>
 										<div class="col-sm-10">
 												<div class="form-check form-switch form-switch-lg">
-														<input type="hidden" name="analytics_ps_gtm_ads_data_redaction" value="0" />
-														<input type="checkbox" name="analytics_ps_gtm_ads_data_redaction" value="1" id="input-ads-data-redaction" class="form-check-input" {% if analytics_ps_gtm_ads_data_redaction %} checked{% endif %} />
+														<input type="hidden" name="analytics_ps_gtm_ads_data_redaction" value="0">
+														<input type="checkbox" name="analytics_ps_gtm_ads_data_redaction" value="1" id="input-ads-data-redaction" class="form-check-input" {% if analytics_ps_gtm_ads_data_redaction %} checked{% endif %}>
 												</div>
 												<div class="form-text">{{ help_ads_data_redaction }}</div>
 										</div>
@@ -193,8 +193,8 @@
 										<label for="input-url-passthrough" class="col-sm-2 col-form-label">{{ entry_url_passthrough }}</label>
 										<div class="col-sm-10">
 												<div class="form-check form-switch form-switch-lg">
-														<input type="hidden" name="analytics_ps_gtm_url_passthrough" value="0" />
-														<input type="checkbox" name="analytics_ps_gtm_url_passthrough" value="1" id="input-url-passthrough" class="form-check-input" {% if analytics_ps_gtm_url_passthrough %} checked{% endif %} />
+														<input type="hidden" name="analytics_ps_gtm_url_passthrough" value="0">
+														<input type="checkbox" name="analytics_ps_gtm_url_passthrough" value="1" id="input-url-passthrough" class="form-check-input" {% if analytics_ps_gtm_url_passthrough %} checked{% endif %}>
 												</div>
 												<div class="form-text">{{ help_url_passthrough }}</div>
 										</div>
@@ -206,23 +206,23 @@
 						<div id="tab-support" class="tab-pane">
 							<h3>{{ heading_getting_started }}</h3>
 							{{ text_getting_started }}
-							<hr />
+							<hr>
 							<h3>{{ heading_setup }}</h3>
 							{{ text_setup }}
-							<hr />
+							<hr>
 							<h3>{{ heading_troubleshot }}</h3>
 							{{ text_troubleshot }}
-							<hr />
+							<hr>
 							<h2>{{ heading_fix }}</h2>
 							<div class="row mb-3">
 								<div class="col-sm-10">
 									<button type="button" data-fix-action="{{ fix_event_handler }}" data-bs-toggle="tooltip" title="{{ button_fix_event_handler }}" class="btn btn-primary"><i class="fa-solid fa-gear"></i> {{ button_fix_event_handler }}</button>
 								</div>
 							</div>
-							<hr />
+							<hr>
 							<h3>{{ heading_faq }}</h3>
 							{{ text_faq }}
-							<hr />
+							<hr>
 							<h3>{{ heading_contact }}</h3>
 							{{ text_contact }}
 						</div>
