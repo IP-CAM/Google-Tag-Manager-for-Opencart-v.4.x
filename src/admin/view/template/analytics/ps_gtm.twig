@@ -241,13 +241,13 @@
 	$('#input-gcm-profiles').on('change', function () {
 		inputs.prop('checked', false);
 
-		var selectedValue = $(this).val();
+		var selectedValue = parseInt($(this).val());
 
-		if (selectedValue === '1') { // Strict
+		if (selectedValue === 1) { // Strict
 			$('#input-functionality-storage').prop('checked', true);
 			$('#input-personalization-storage').prop('checked', true);
 			$('#input-security-storage').prop('checked', true);
-		} else if (selectedValue === '2') { // Balanced
+		} else if (selectedValue === 2) { // Balanced
 			$('#input-ad-storage').prop('checked', true);
 			$('#input-ad-user-data').prop('checked', true);
 			$('#input-analytics-storage').prop('checked', true);

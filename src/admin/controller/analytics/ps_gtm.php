@@ -60,7 +60,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
         $data['analytics_ps_gtm_functionality_storage'] = (bool) $this->config->get('analytics_ps_gtm_functionality_storage');
         $data['analytics_ps_gtm_personalization_storage'] = (bool) $this->config->get('analytics_ps_gtm_personalization_storage');
         $data['analytics_ps_gtm_security_storage'] = (bool) $this->config->get('analytics_ps_gtm_security_storage');
-        $data['analytics_ps_gtm_wait_for_update'] = $this->config->get('analytics_ps_gtm_wait_for_update');
+        $data['analytics_ps_gtm_wait_for_update'] = (int) $this->config->get('analytics_ps_gtm_wait_for_update');
         $data['analytics_ps_gtm_ads_data_redaction'] = (bool) $this->config->get('analytics_ps_gtm_ads_data_redaction');
         $data['analytics_ps_gtm_url_passthrough'] = (bool) $this->config->get('analytics_ps_gtm_url_passthrough');
 
