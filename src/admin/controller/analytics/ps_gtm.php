@@ -90,6 +90,12 @@ class PsGtm extends \Opencart\System\Engine\Controller
             $data['analytics_ps_gtm_gcm_profiles'] = 2;
         }
 
+        $data['gcm_profiles'] = [
+            $this->language->get('entry_custom'),
+            $this->language->get('entry_strict'),
+            $this->language->get('entry_balanced'),
+        ];
+
         $data['text_contact'] = sprintf($this->language->get('text_contact'), self::EXTENSION_EMAIL, self::EXTENSION_EMAIL, self::EXTENSION_DOC);
 
         $data['header'] = $this->load->controller('common/header');
@@ -110,10 +116,17 @@ class PsGtm extends \Opencart\System\Engine\Controller
         }
 
         if (!$json) {
-            if (!isset($this->request->post['analytics_ps_gtm_gtm_id'])) {
+            if (empty($this->request->post['analytics_ps_gtm_gtm_id'])) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id');
-            } elseif (preg_match('/^GTM-[A-Z0-9]+$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
+            } elseif (preg_match('/^GTM-[A-Z0-9]{8}$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id_invalid');
+            }
+
+            if (
+                $this->request->post['analytics_ps_gtm_wait_for_update'] < 0 ||
+                $this->request->post['analytics_ps_gtm_wait_for_update'] > 10000
+            ) {
+                $json['error']['input-wait-for-update'] = $this->language->get('error_wait_for_update');
             }
         }
 
