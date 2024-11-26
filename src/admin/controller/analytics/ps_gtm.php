@@ -161,6 +161,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
             } else {
                 $this->model_setting_event->addEvent(
                     'analytics_ps_gtm',
+                    '',
                     'catalog/view/common/header/before',
                     'extension/ps_gtm/analytics/ps_gtm' . $separator . 'eventCatalogViewCommonHeaderBefore'
                 );
@@ -206,6 +207,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
             } else {
                 $result = $this->model_setting_event->addEvent(
                     'analytics_ps_gtm',
+                    '',
                     'catalog/view/common/header/before',
                     'extension/ps_gtm/analytics/ps_gtm' . $separator . 'eventCatalogViewCommonHeaderBefore'
                 );
