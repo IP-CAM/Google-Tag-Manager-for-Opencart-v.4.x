@@ -51,18 +51,18 @@ $_['entry_gcm_profiles']            = 'Profils GCM';
 $_['button_fix_event_handler']      = 'Corriger le gestionnaire d\'événements';
 
 // Help
-$_['help_ad_storage']               = 'Contrôle si le stockage des données est autorisé à des fins publicitaires, comme le suivi des clics ou des conversions publicitaires.';
-$_['help_ad_user_data']             = 'Détermine si les données des utilisateurs interagissant avec les annonces sont stockées, améliorant ainsi les capacités de ciblage publicitaire.';
-$_['help_ad_personalization']       = 'Permet de personnaliser les annonces en fonction des données des utilisateurs, offrant ainsi des publicités plus pertinentes.';
-$_['help_analytics_storage']        = 'Permet le stockage des données utilisées à des fins d\'analyse, aidant à suivre les performances du site et le comportement des utilisateurs.';
-$_['help_functionality_storage']    = 'Permet le stockage des données pour soutenir les fonctionnalités, telles que les préférences utilisateur ou les caractéristiques du site qui améliorent l\'expérience utilisateur.';
-$_['help_personalization_storage']  = 'Contrôle le stockage des données pour personnaliser l\'expérience utilisateur, comme le contenu recommandé ou les paramètres.';
-$_['help_security_storage']         = 'Assure le stockage des données liées à la sécurité, comme la prévention de la fraude et le contrôle d\'accès sécurisé.';
-$_['help_wait_for_update']          = 'Définit le délai (en millisecondes) avant de mettre à jour l\'état du consentement, assurant ainsi que tous les paramètres sont appliqués.';
-$_['help_ads_data_redaction']       = 'Rédige les données utilisateur relatives aux annonces, garantissant la confidentialité en masquant certaines informations identifiables.';
-$_['help_url_passthrough']          = 'Permet au lien URL de passer les vérifications de consentement, utile pour suivre des parcours utilisateur spécifiques sans stocker de données personnelles.';
-$_['help_gcm_status']               = 'Active le Mode de Consentement Google, permettant à votre site d\'ajuster le comportement des balises Google en fonction des paramètres de consentement de l\'utilisateur. Ce mode offre un suivi respectueux de la vie privée, permettant à la fois les analyses et les annonces de fonctionner conformément aux préférences de consentement.';
-$_['help_gtm_id_locate']            = 'Pour trouver votre Identifiant de mesure, connectez-vous à votre <a href="https://tagmanager.google.com" target="_blank" rel="external noopener noreferrer">compte Google Tag Manager</a>. Dans l\'espace de travail, recherchez l\'ID en haut du tableau de bord, il commence par "GTM-" suivi d\'une série unique de lettres et de chiffres, comme "GTM-XXXXXXXX". <a href="https://support.google.com/analytics/answer/12270356?hl=en" target="_blank" rel="external noopener noreferrer">Plus d\'instructions détaillées ici</a>.';
+$_['help_ad_storage']               = 'Contrôle si le stockage des données est autorisé à des fins publicitaires, telles que le suivi des clics sur les publicités ou des conversions.';
+$_['help_ad_user_data']             = 'Détermine si les données des utilisateurs interagissant avec les publicités sont stockées, améliorant ainsi les capacités de ciblage des publicités.';
+$_['help_ad_personalization']       = 'Permet de personnaliser les publicités en fonction des données utilisateur, fournissant des publicités plus pertinentes pour les utilisateurs.';
+$_['help_analytics_storage']        = 'Active le stockage des données utilisées à des fins d\'analyse, permettant de suivre la performance du site et le comportement des utilisateurs.';
+$_['help_functionality_storage']    = 'Permet le stockage des données nécessaires au bon fonctionnement du site, comme les préférences utilisateur ou les fonctionnalités qui améliorent l\'expérience utilisateur.';
+$_['help_personalization_storage']  = 'Contrôle le stockage des données permettant de personnaliser l\'expérience utilisateur, comme les contenus recommandés ou les paramètres.';
+$_['help_security_storage']         = 'Assure le stockage des données liées à la sécurité, telles que la prévention des fraudes et le contrôle d\'accès sécurisé.';
+$_['help_wait_for_update']          = 'Définit le délai (en millisecondes) à attendre avant de mettre à jour le statut de consentement, garantissant que tous les paramètres sont appliqués.';
+$_['help_ads_data_redaction']       = 'Rédige les données utilisateur liées aux publicités, garantissant la confidentialité en masquant certaines informations identifiables.';
+$_['help_url_passthrough']          = 'Permet au URL de passer à travers les vérifications de consentement, utile pour suivre des chemins d\'utilisateurs spécifiques sans stocker de données personnelles.';
+$_['help_gcm_status']               = 'Active le Mode de Consentement Google, permettant à votre site d\'ajuster le comportement des balises Google en fonction des paramètres de consentement de l\'utilisateur. Ce mode offre un suivi respectueux de la vie privée, permettant à la fois les analyses et les publicités de fonctionner conformément aux préférences de consentement.';
+$_['help_gtm_id_locate']            = 'Pour trouver votre identifiant Measurement ID pour votre <a href="https://tagmanager.google.com" target="_blank" rel="external noopener noreferrer">compte Google Tag Manager</a>, recherchez l\'ID en haut du tableau de bord de l\'espace de travail — il commence par "GTM-" suivi d\'une série unique de lettres et de chiffres, comme "GTM-XXXXXXXX". <a href="https://support.google.com/analytics/answer/12270356?hl=fr" target="_blank" rel="external noopener noreferrer">Instructions détaillées ici</a>.';
 
 // Error
 $_['error_permission']              = 'Avertissement : Vous n\'avez pas la permission de modifier les paramètres de Google Tag Manager !';
