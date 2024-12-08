@@ -118,7 +118,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
         if (!$json) {
             if (empty($this->request->post['analytics_ps_gtm_gtm_id'])) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id');
-            } elseif (preg_match('/^GTM-[A-Z0-9]{8}$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
+            } elseif (preg_match('/^GTM-[A-Z0-9]{7,8}$/', $this->request->post['analytics_ps_gtm_gtm_id']) !== 1) {
                 $json['error']['input-gtm-id'] = $this->language->get('error_gtm_id_invalid');
             }
 
