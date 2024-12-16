@@ -1,5 +1,6 @@
 {
     "name": "Playful Sparkle - Google Tag Manager",
+    "description": "Easily integrate Google Tag Manager for seamless tracking, with no code required, and customizable privacy settings for improved data management.",
     "code": "ps_gtm",
     "license": "GPL",
     "version": "1.0.0",
