@@ -144,7 +144,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
 
     public function install(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/ps_gtm/analytics/ps_gtm')) {
+        if ($this->user->hasPermission('modify', 'extension/analytics')) {
             $this->load->model('setting/event');
 
             $separator = version_compare(VERSION, '4.0.2.0', '>=') ? '.' : '|';
@@ -171,7 +171,7 @@ class PsGtm extends \Opencart\System\Engine\Controller
 
     public function uninstall(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/ps_gtm/analytics/ps_gtm')) {
+        if ($this->user->hasPermission('modify', 'extension/analytics')) {
             $this->load->model('setting/event');
 
             $this->model_setting_event->deleteEventByCode('analytics_ps_gtm');
